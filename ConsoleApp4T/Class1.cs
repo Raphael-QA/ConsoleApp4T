@@ -23,16 +23,20 @@ namespace ConsoleApp4T
         }
         public double Sqrt(double a)
         {
-            int result = 0;
-            int b = 1;
-            
-            while (b <= a)
-            {
-                a -= b;
-                b += 2;
-                result += 1;
-            }
-            return result;
+
+
+
+                                 
+            //double result = 0;
+            //double b = 1;
+
+            //while (b <= a)
+            //{
+            //    a -= b;
+            //    b += 2;
+            //    result += 1;
+            //}
+            return Math.Sqrt(a);
         }
         public double Mult(double a, double b)
         {
