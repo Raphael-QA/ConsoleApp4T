@@ -11,8 +11,7 @@ namespace ConsoleApp4T
     {
         public double a;
         public double b;
-        public int c;
-        public int d;
+     
         public double Sum(double a, double b)
         {
             return a + b;
@@ -42,9 +41,17 @@ namespace ConsoleApp4T
         {
             return a * b;
         }
-        public int Div(int c, int d)
+        public double Div(double c, double d)
         {
-            return c / d;
+            if(b!=0)
+                {
+              return c / d;
+            }
+            else
+            {
+                throw new Exception("Деление на 0");
+            }
+            
         }
     }
 }

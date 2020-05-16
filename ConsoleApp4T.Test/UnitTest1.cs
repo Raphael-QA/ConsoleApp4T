@@ -64,12 +64,12 @@ namespace ConsoleApp4T.Test
         [InlineData(10, 5, 2)]
         [InlineData(27, 9, 3)]
 
-        public void TestDiv(int a, int b, int exp)
+        public void TestDiv(double a, double b, double exp)
         {
             Class1 class1 = new Class1();
-        
 
-            int act = class1.Div(a, b);
+
+            double act = class1.Div(a, b);
 
             Assert.Equal(exp, act);
         }

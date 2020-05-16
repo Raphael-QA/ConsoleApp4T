@@ -70,10 +70,11 @@ namespace ConsoleApp4T
                         try 
                         { 
                         Console.WriteLine("Введите перове чило");
-                        class1.c = int.Parse(Console.ReadLine());
+                        class1.a = double.Parse(Console.ReadLine());
+                            
                         Console.WriteLine("Введите второе чило");
-                        class1.d = int.Parse(Console.ReadLine());
-                        Console.WriteLine($"\nРезультат: {class1.Div(class1.c, class1.d)}\n\nНажмите любую клавишу для продолжения...");
+                        class1.b = double.Parse(Console.ReadLine());
+                        Console.WriteLine($"\nРезультат: {class1.Div(class1.a, class1.b)}\n\nНажмите любую клавишу для продолжения...");
                         Console.ReadKey();
                         }
                         catch (Exception ex)
